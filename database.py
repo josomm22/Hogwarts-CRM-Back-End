@@ -1,8 +1,38 @@
 database = {
-    'students':{
+    'students':{[
+        {
+    'id': 1,
+    'first_name': 'ron',
+    'last_name': 'weasley',
+    'date_created': '07/01/2020',
+    'last_updated': '07/01/2020',
+    'existing_skillz': [[1,4],[3,2],[9,5],[14,4],[16,2]],
+    'desired_skillz': [[1,5],[2,5],[6,4],[14,5],[3,2]],
+    'course_interests': [3,4]
+},
+{
+    'id': 1,
+    'first_name': 'harry',
+    'last_name': 'potter',
+    'date_created': '07/01/2020',
+    'last_updated': '07/01/2020',
+    'existing_skillz': [[1,4],[3,2],[9,5],[14,4],[16,2]],
+    'desired_skillz': [[1,5],[2,5],[6,4],[14,5],[3,2]],
+    'course_interests': [3,4]
+},
+{
+    'id': 1,
+    'first_name': 'hermione',
+    'last_name': 'granger',
+    'date_created': '07/01/2020',
+    'last_updated': '07/01/2020',
+    'existing_skillz': [[1,4],[3,2],[9,5],[14,4],[16,2]],
+    'desired_skillz': [[1,5],[2,5],[6,4],[14,5],[3,2]],
+    'course_interests': [3,4]
+},
+    ]
 
         }
-
     }
 
 ron = {
