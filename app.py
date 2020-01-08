@@ -4,8 +4,11 @@ import time
 import os
 from database import database
 from constructor import construct as construct
+from flask_cors import CORS, cross_origin
+
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def main():
@@ -19,7 +22,8 @@ def get_students_table():
     for student in database['students']:
         student_row = dict(id = student['id'], firstName = student['first_name'], lastName = student['last_name'], dateCreated = student['date_created'], dateUpdated = student['last_updated'] )
         students.append(student_row)
-    return jsonify({'students': students})
+    response = {'students': students}
+    return jsonify(response)
 
 @app.route("/students", methods=['POST'])
 def create_new_student():
@@ -68,4 +72,4 @@ def update_student_details(student_id):
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='127.0.0.1', port=port)
