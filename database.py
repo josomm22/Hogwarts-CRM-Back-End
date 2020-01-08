@@ -1,5 +1,5 @@
 database = {
-    'students':{[
+    'students':[
         {
     'id': 1,
     'first_name': 'ron',
@@ -11,7 +11,7 @@ database = {
     'course_interests': [3,4]
 },
 {
-    'id': 1,
+    'id': 2,
     'first_name': 'harry',
     'last_name': 'potter',
     'date_created': '07/01/2020',
@@ -21,7 +21,7 @@ database = {
     'course_interests': [3,4]
 },
 {
-    'id': 1,
+    'id': 3,
     'first_name': 'hermione',
     'last_name': 'granger',
     'date_created': '07/01/2020',
@@ -32,7 +32,7 @@ database = {
 },
     ]
 
-        }
+        
     }
 
 ron = {
