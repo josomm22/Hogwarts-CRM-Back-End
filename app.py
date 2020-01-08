@@ -47,6 +47,22 @@ def get_student(student_id):
         abort(404)
     return jsonify({'student_details': student_details[0]})
 
+@app.route("/students/<int:student_id>", methods=['PUT'])
+def update_student_details(student_id):
+    students_db = database['students']
+    student_details = [student for student in students_db if student['id'] == student_id]
+    if len(student_details) == 0:
+        abort(404)
+    if not request.json:
+        abort(400)
+    # if 'first_name' in request.json and type(request.json['first_name']) != unicode:
+    #     abort(400)
+    # if 'last_name' in request.json and type(request.json['last_name']) is not unicode:
+    #     abort(400)
+    student_details[0]['first_name'] = request.json.get('first_name', student_details[0]['first_name'])
+    student_details[0]['last_name'] = request.json.get('last_name', student_details[0]['last_name'])
+    return jsonify({'student_details': student_details[0]})
+
 
 
 if __name__ == "__main__":
