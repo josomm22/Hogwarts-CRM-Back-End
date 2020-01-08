@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, abort, request, render_template
 import threading
 import time
+import os
 from database import database
 from constructor import construct as construct
 
@@ -66,5 +67,5 @@ def update_student_details(student_id):
 
 
 if __name__ == "__main__":
-    threading.Thread(target=app.run).start()
-    time.sleep(0.5)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)    time.sleep(0.5)
