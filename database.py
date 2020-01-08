@@ -1,7 +1,7 @@
 database = {
     'students':[
         {
-    'id': 1,
+    'id': 1000,
     'first_name': 'ron',
     'last_name': 'weasley',
     'date_created': '07/01/2020',
@@ -11,7 +11,7 @@ database = {
     'course_interests': [3,4]
 },
 {
-    'id': 2,
+    'id': 1001,
     'first_name': 'harry',
     'last_name': 'potter',
     'date_created': '07/01/2020',
@@ -21,7 +21,7 @@ database = {
     'course_interests': [3,4]
 },
 {
-    'id': 3,
+    'id': 1002,
     'first_name': 'hermione',
     'last_name': 'granger',
     'date_created': '07/01/2020',
