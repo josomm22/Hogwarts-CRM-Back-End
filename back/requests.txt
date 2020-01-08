@@ -1,0 +1,9 @@
+get all users:
+curl -i http://127.0.0.1:5000/students
+
+add a new user:
+curl -i -H "Content-Type: application/json" -X POST -d "{"""first_name""":"""rami""","""last_name""":"""levy"""}" http://127.0.0.1:5000/students"
+
+
+edit a user:
+curl -i -H "Content-Type: application/json" -X PUT -d "{"""first_name""":"""rami""","""last_name""":"""levy"""}" http://127.0.0.1:5000/students/1001
