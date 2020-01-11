@@ -30,21 +30,52 @@ database = {
     'desired_skillz': [[1,5],[2,5],[6,4],[14,5],[3,2]],
     'course_interests': [3,4]
 },
-    ]
-
-        
-    }
-
-ron = {
-    'id': 1,
-    'first_name': 'ron',
-    'last_name': 'weasley',
+{
+    'id': 1003,
+    'first_name': 'Neville',
+    'last_name': 'Longbttom',
     'date_created': '07/01/2020',
     'last_updated': '07/01/2020',
     'existing_skillz': [[1,4],[3,2],[9,5],[14,4],[16,2]],
     'desired_skillz': [[1,5],[2,5],[6,4],[14,5],[3,2]],
     'course_interests': [3,4]
-}
+},
+{
+    'id': 1004,
+    'first_name': 'Draco',
+    'last_name': 'Malfoy',
+    'date_created': '07/01/2020',
+    'last_updated': '07/01/2020',
+    'existing_skillz': [[1,4],[3,2],[9,5],[14,4],[16,2]],
+    'desired_skillz': [[1,5],[2,5],[6,4],[14,5],[3,2]],
+    'course_interests': [3,4]
+},
+{
+    'id': 1005,
+    'first_name': 'Luna',
+    'last_name': 'Lovejoy',
+    'date_created': '07/01/2020',
+    'last_updated': '07/01/2020',
+    'existing_skillz': [[1,4],[3,2],[9,5],[14,4],[16,2]],
+    'desired_skillz': [[1,5],[2,5],[6,4],[14,5],[3,2]],
+    'course_interests': [3,4]
+},
+{
+    'id': 1006,
+    'first_name': 'Genny',
+    'last_name': 'Weasley',
+    'date_created': '07/01/2020',
+    'last_updated': '07/01/2020',
+    'existing_skillz': [[1,4],[3,2],[9,5],[14,4],[16,2]],
+    'desired_skillz': [[1,5],[2,5],[6,4],[14,5],[3,2]],
+    'course_interests': [3,4]
+},
+    
+    ]
+
+        
+    }
+
 
 skillz = {
     1:'alchemy',
