@@ -2,7 +2,7 @@ from flask import Flask, jsonify, abort, request, render_template
 import threading
 import time
 import os
-from database import database
+from database import database, skillz, courses_list
 from constructor import construct as construct
 from flask_cors import CORS, cross_origin
 
@@ -12,8 +12,8 @@ CORS(app)
 
 @app.route("/")
 def main():
-    me = {'username': 'jonathan'}
-    return render_template('index.html', title ='poop', user=me)
+    # me = {'username': 'jonathan'}
+    return 'welcome to the Hogwarts Api'
 
 
 @app.route("/students", methods=['GET'])
@@ -68,8 +68,14 @@ def update_student_details(student_id):
     student_details[0]['last_name'] = request.json.get('last_name', student_details[0]['last_name'])
     return jsonify({'student_details': student_details[0]})
 
+@app.route("/curriculum/skills", methods=['GET'])
+def get_skillz():
+    return jsonify(skillz)
 
+@app.route("/curriculum/courses", methods=['GET'])
+def get_courses():
+    return jsonify(courses_list)
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='127.0.0.1', port=port)
