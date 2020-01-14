@@ -66,6 +66,10 @@ def update_student_details(student_id):
     #     abort(400)
     student_details[0]['first_name'] = request.json.get('first_name', student_details[0]['first_name'])
     student_details[0]['last_name'] = request.json.get('last_name', student_details[0]['last_name'])
+    student_details[0]['existing_skillz'] = request.json.get('existing_skillz', student_details[0]['existing_skillz'])
+    student_details[0]['desired_skillz'] = request.json.get('desired_skillz', student_details[0]['desired_skillz'])
+    student_details[0]['course_interests'] = request.json.get('course_interests', student_details[0]['course_interests'])
+    student_details[0]['last_updated'] = makeTimeStamp()
     return jsonify({'student_details': student_details[0]})
 
 @app.route("/curriculum/skills", methods=['GET'])
