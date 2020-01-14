@@ -8,7 +8,7 @@ database = {
             'last_updated': '07/01/2020',
             'existing_skillz': [[1, 4], [3, 2], [9, 5], [14, 4], [16, 2]],
             'desired_skillz': [[1, 5], [2, 5], [6, 4], [14, 5], [3, 2]],
-            'course_interests': [3, 4]
+            'course_interests': [[3,0],[4,0]]
         },
         {
             'id': 1001,
@@ -18,7 +18,7 @@ database = {
             'last_updated': '07/01/2020',
             'existing_skillz': [[1, 4], [3, 2], [9, 5], [14, 4], [16, 2]],
             'desired_skillz': [[1, 5], [2, 5], [6, 4], [14, 5], [3, 2]],
-            'course_interests': [3, 4]
+            'course_interests': [[3,0],[4,0]]
         },
         {
             'id': 1002,
@@ -28,7 +28,7 @@ database = {
             'last_updated': '07/01/2020',
             'existing_skillz': [[1, 4], [3, 2], [9, 5], [14, 4], [16, 2]],
             'desired_skillz': [[1, 5], [2, 5], [6, 4], [14, 5], [3, 2]],
-            'course_interests': [3, 4]
+            'course_interests': [[3,0],[4,0]]
         },
         {
             'id': 1003,
@@ -38,7 +38,7 @@ database = {
             'last_updated': '07/01/2020',
             'existing_skillz': [[1, 4], [3, 2], [9, 5], [14, 4], [16, 2]],
             'desired_skillz': [[1, 5], [2, 5], [6, 4], [14, 5], [3, 2]],
-            'course_interests': [3, 4]
+            'course_interests': [[3,0],[4,0]]
         },
         {
             'id': 1004,
@@ -48,7 +48,7 @@ database = {
             'last_updated': '07/01/2020',
             'existing_skillz': [[1, 4], [3, 2], [9, 5], [14, 4], [16, 2]],
             'desired_skillz': [[1, 5], [2, 5], [6, 4], [14, 5], [3, 2]],
-            'course_interests': [3, 4]
+            'course_interests': [[3,0],[4,0]]
         },
         {
             'id': 1005,
@@ -58,7 +58,7 @@ database = {
             'last_updated': '07/01/2020',
             'existing_skillz': [[1, 4], [3, 2], [9, 5], [14, 4], [16, 2]],
             'desired_skillz': [[1, 5], [2, 5], [6, 4], [14, 5], [3, 2]],
-            'course_interests': [3, 4]
+            'course_interests': [[3,0],[4,0]]
         },
         {
             'id': 1006,
@@ -68,7 +68,7 @@ database = {
             'last_updated': '07/01/2020',
             'existing_skillz': [[1, 4], [3, 2], [9, 5], [14, 4], [16, 2]],
             'desired_skillz': [[1, 5], [2, 5], [6, 4], [14, 5], [3, 2]],
-            'course_interests': [3, 4]
+            'course_interests': [[3,0],[4,0]]
         },
 
     ]
