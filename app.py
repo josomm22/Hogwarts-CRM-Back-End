@@ -3,7 +3,7 @@ import threading
 import time
 import os
 from database import database, skillz, courses_list
-from constructor import construct as construct
+from secondary import makeTimeStamp as makeTimeStamp
 from flask_cors import CORS, cross_origin
 
 
@@ -35,8 +35,8 @@ def create_new_student():
         'id': students_db[-1]['id']+1,
         'first_name': request.json['first_name'],
         'last_name': request.json['last_name'],
-        'date_created': '08/01/2020',
-        'last_updated': '08/01/2020',
+        'date_created': makeTimeStamp(),
+        'last_updated': makeTimeStamp(),
         'existing_skillz': [[1,4],[3,2],[9,5],[14,4],[16,2]],
         'desired_skillz': [[1,5],[2,5],[6,4],[14,5],[3,2]],
         'course_interests': [3,4]
