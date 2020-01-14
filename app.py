@@ -40,9 +40,9 @@ def create_new_student():
         'last_name': request.json['last_name'],
         'date_created': makeTimeStamp(),
         'last_updated': makeTimeStamp(),
-        'existing_skillz': [[1, 4], [3, 2], [9, 5], [14, 4], [16, 2]],
-        'desired_skillz': [[1, 5], [2, 5], [6, 4], [14, 5], [3, 2]],
-        'course_interests': [3, 4]
+        'existing_skillz': request.json['existing_skillz'],
+        'desired_skillz': request.json['desired_skillz'],
+        'course_interests': request.json['course_interests'],
     }
     students_db.append(new_student)
     return jsonify({'new_student': new_student}), 201
