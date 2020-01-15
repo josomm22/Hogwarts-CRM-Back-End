@@ -85,7 +85,8 @@ def update_student_details(student_id):
 def get_students_skills():
     skills_array = []
     for student in database['students']:
-        skills_array.append(student['existing_skillz'])
+        for arr in student['existing_skillz']:
+            skills_array.append(arr)
     return jsonify( skills_array)
 
 @app.route("/students/creationsummary", methods=['GET'])
