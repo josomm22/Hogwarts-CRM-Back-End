@@ -81,6 +81,20 @@ def update_student_details(student_id):
     student_details[0]['last_updated'] = makeTimeStamp()
     return jsonify({'student_details': student_details[0]})
 
+@app.route("/students/skillssummary", methods=['GET'])
+def get_students_skills():
+    skills_array = []
+    for student in database['students']:
+        skills_array.append(student['existing_skillz'])
+    return jsonify( skills_array)
+
+@app.route("/students/creationsummary", methods=['GET'])
+def get_created_on_date():
+    created_on_array = []
+    for student in database['students']:
+        created_on_array.append(student['date_created'])
+    return jsonify(created_on_array)
+
 
 @app.route("/curriculum/skills", methods=['GET'])
 def get_skillz():
@@ -94,4 +108,4 @@ def get_courses():
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='127.0.0.1', port=port)
