@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, abort, request, render_template
 import threading
 import time
-import os
+# import os
 from database import database, skillz, courses_list
 from secondary import makeTimeStamp as makeTimeStamp
 from flask_cors import CORS, cross_origin
@@ -108,5 +108,6 @@ def get_courses():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get('PORT', 5000))
+    # port = int(os.environ.get('PORT', 5000))
+    port = '5000'
     app.run(host='0.0.0.0', port=port)
